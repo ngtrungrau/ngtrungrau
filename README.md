@@ -1,41 +1,31 @@
-# ⚙️ [Tên Engine của bạn] Engine 
+# My Custom C++ Game Engine (Learning Project)
 
-![C++](https://img.shields.io/badge/C++-17%2B-blue.svg?style=for-the-badge&logo=c%2B%2B)
-![OpenGL](https://img.shields.io/badge/OpenGL-3.3%2B-5586A4.svg?style=for-the-badge&logo=opengl)
-![Platform](https://img.shields.io/badge/Platform-Windows-lightgray.svg?style=for-the-badge&logo=windows)
-![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
+Hello! I'm a programmer with a background in Competitive Programming (algorithms & data structures). I started this project to teach myself computer graphics, linear algebra, and how game engines actually work under the hood.
 
-> A custom, high-performance Game Engine built from scratch in C++, focusing on low-level architecture, custom mathematical foundations, and an optimized graphics pipeline.
+Instead of jumping straight into Unity or Unreal, I wanted to build the foundational pieces from scratch using **C++** and **OpenGL**. 
 
-## 🧠 About The Project
+## 🎯 Goal of this Project
+This is purely an educational playground. My main focus is on **understanding the "Why" and "How"**:
+- Understanding the core math behind 3D graphics (Linear Algebra, MVP pipelines, Projections).
+- Learning memory management and low-level system design in C++.
+- Applying algorithmic thinking to real-time rendering.
 
-Được phát triển bởi một lập trình viên có nền tảng thuật toán thi đấu (Competitive Programming), Engine này không sử dụng các high-level abstractions có sẵn mà đi sâu vào bản chất toán học và hệ thống. 
+## 🛠️ What I've built so far
+- **Custom Math Library:** Writing my own matrix (`Mat4`) and vector classes to deeply understand transformations, rather than relying on external libraries like GLM.
+- **Rendering Pipeline:** Implemented a basic 2D/3D rendering pipeline, currently exploring **Batch Rendering** to optimize draw calls.
+- **Debugging Tools:** Integrated **Dear ImGui** to create a simple editor interface for tweaking camera positions and MVP matrices in real-time.
 
-Mục tiêu cốt lõi của project là kiểm soát 100% vòng đời của dữ liệu từ CPU xuống GPU, tự xây dựng thư viện Toán học (Linear Algebra) và tối ưu hóa Render Pipeline.
+## 💻 Tech Stack
+- **Language:** C++17
+- **Graphics API:** OpenGL 3.3+
+- **Window/Input:** GLFW
+- **UI:** Dear ImGui
 
-### ✨ Highlighted Features
-- **Custom Math Library:** Tự xây dựng cấu trúc `Mat4`, `Vec3`, xử lý trơn tru ma trận Model-View-Projection (MVP) và Orthographic/Perspective Projection mà không phụ thuộc GLM.
-- **Optimized 2D/3D Batch Rendering:** Thuật toán gom nhóm dữ liệu (Batching) giúp giảm thiểu tối đa số lượng Draw Calls, tối ưu hóa băng thông CPU-GPU.
-- **Immediate Mode GUI Editor:** Tích hợp **Dear ImGui** để tạo môi trường Debug thời gian thực, điều khiển Camera và Inspector trực quan.
-- **Algorithm-Driven Architecture:** Áp dụng các cấu trúc dữ liệu và thuật toán tối ưu từ Competitive Programming vào quản lý bộ nhớ và vòng lặp Game (Game Loop).
+## 🚀 What's Next?
+I am currently following The Cherno's OpenGL series and applying concepts from 3Blue1Brown's "Essence of Linear Algebra". My next steps are:
+- [ ] Implement a full 3D Perspective/FPS Camera.
+- [ ] Basic Lighting (Phong Shading).
+- [ ] Integrating more complex data structures for scene management.
 
-## 🛠️ Architecture & Tech Stack
-- **Core Language:** `C++` (Modern C++)
-- **Graphics API:** `OpenGL`
-- **Windowing & Input:** `GLFW`
-- **UI / Editor:** `Dear ImGui`
-
-## 🚀 Getting Started
-
-### Prerequisites
-- C++17 Compiler (MSVC, GCC, or Clang)
-- CMake (3.15+) hoặc Premake
-
-### Building the Engine
-```bash
-# Clone the repository and submodules
-git clone --recursive [https://github.com/yourusername/YourEngineName.git](https://github.com/yourusername/YourEngineName.git)
-
-# Generate project files and build
-cd YourEngineName
-# (Thêm lệnh build của bạn vào đây, ví dụ: vendor\bin\premake\premake5.exe vs2022)
+---
+*Feel free to explore the code! I'm always open to feedback and learning from experienced engine developers.*
