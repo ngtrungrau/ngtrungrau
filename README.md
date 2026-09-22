@@ -1,31 +1,63 @@
-# My Custom C++ Game Engine (Learning Project)
+<div align="center">
 
-Hello! I'm a programmer with a background in Competitive Programming (algorithms & data structures). I started this project to teach myself computer graphics, linear algebra, and how game engines actually work under the hood.
+<!-- Hiệu ứng gõ chữ động (Typing Effect) -->
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=30&pause=1000&color=00FF99&center=true&vCenter=true&width=600&lines=My+Custom+C%2B%2B+Game+Engine;Algorithm-Driven+Architecture;Built+from+Scratch!" alt="Typing SVG" />
 
-Instead of jumping straight into Unity or Unreal, I wanted to build the foundational pieces from scratch using **C++** and **OpenGL**. 
+**A low-level, math-focused Game Engine built for learning and experimenting.**
 
-## 🎯 Goal of this Project
-This is purely an educational playground. My main focus is on **understanding the "Why" and "How"**:
-- Understanding the core math behind 3D graphics (Linear Algebra, MVP pipelines, Projections).
-- Learning memory management and low-level system design in C++.
-- Applying algorithmic thinking to real-time rendering.
+<!-- Huy hiệu màu sắc (Badges) -->
+![C++](https://img.shields.io/badge/C++17-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![OpenGL](https://img.shields.io/badge/OpenGL-5586A4?style=for-the-badge&logo=opengl&logoColor=white)
+![GLFW](https://img.shields.io/badge/GLFW-Windows_/_Linux-orange?style=for-the-badge)
+![ImGui](https://img.shields.io/badge/UI-Dear_ImGui-FF69B4?style=for-the-badge)
 
-## 🛠️ What I've built so far
-- **Custom Math Library:** Writing my own matrix (`Mat4`) and vector classes to deeply understand transformations, rather than relying on external libraries like GLM.
-- **Rendering Pipeline:** Implemented a basic 2D/3D rendering pipeline, currently exploring **Batch Rendering** to optimize draw calls.
-- **Debugging Tools:** Integrated **Dear ImGui** to create a simple editor interface for tweaking camera positions and MVP matrices in real-time.
+<br>
 
-## 💻 Tech Stack
-- **Language:** C++17
-- **Graphics API:** OpenGL 3.3+
-- **Window/Input:** GLFW
-- **UI:** Dear ImGui
+<!-- CHỖ NÀY BẠN TỰ QUAY 1 ĐOẠN VIDEO NGẮN HOẶC GIF LÚC CHẠY CODE RỒI THẢ VÀO ĐÂY NHÉ -->
+<img src="https://cdn.dribbble.com/users/35381/screenshots/3739777/media/bcbd8bb0b78cb0973a8fdecf060b9c33.gif" alt="Engine Demo Placeholder" width="800" style="border-radius: 10px;"/>
 
-## 🚀 What's Next?
-I am currently following The Cherno's OpenGL series and applying concepts from 3Blue1Brown's "Essence of Linear Algebra". My next steps are:
-- [ ] Implement a full 3D Perspective/FPS Camera.
-- [ ] Basic Lighting (Phong Shading).
-- [ ] Integrating more complex data structures for scene management.
+</div>
 
 ---
-*Feel free to explore the code! I'm always open to feedback and learning from experienced engine developers.*
+
+## 💡 The Vision (Learning Project)
+> *"Understanding the roots, not just using the tools."*
+
+Hi! I have a background in **Competitive Programming (Algorithms & Data Structures)**. I started this project to transition from solving algorithmic puzzles to building real-time, low-level systems. 
+
+Instead of jumping straight into commercial engines like Unity or Unreal, I wanted to understand exactly what happens between the CPU and GPU. Everything here—from linear algebra to the rendering pipeline—is built from scratch to deeply understand the **"Why"** and **"How"**.
+
+## 🚀 Highlighted Tech & Features
+
+### 📐 1. Custom Math Foundation
+No external math libraries (like GLM). I wrote my own custom math headers:
+- `Mat4`, `Vec3`, `Vec4` implementations.
+- Model-View-Projection (MVP) matrix calculations.
+- Deep focus on **Linear Transformations** & **Homogeneous Coordinates**.
+
+### 🎨 2. Rendering Pipeline
+- **Batch Rendering:** Optimizing draw calls by packing multiple quads into a single Vertex Buffer.
+- **Index/Vertex Buffers:** Manual memory layout and stride calculations.
+- **Orthographic Projection:** Currently set up for 2D UI/World rendering (Perspective 3D coming next).
+
+### 🛠️ 3. Immediate Mode Editor
+- Integrated **Dear ImGui** to build an in-engine toolset.
+- Real-time manipulation of Camera, Transformations, and Shader Uniforms without recompiling.
+
+## 🗺️ Progress & Roadmap
+
+- [x] **Phase 1:** Windowing & Context (`GLFW`, `GLEW`).
+- [x] **Phase 2:** Shaders & Uniforms setup.
+- [x] **Phase 3:** Textures & Alpha Blending.
+- [x] **Phase 4:** Mathematics (Vectors, Matrices, Projections).
+- [ ] **Phase 5:** Framebuffers & Post-Processing (Bloom, Blur).
+- [ ] **Phase 6:** 3D Perspective Camera & Lighting.
+- [ ] **Phase 7:** Algorithmic Physics & Collision Detection (AABB, Quadtrees).
+
+## ⚙️ How to Build
+*(Instructions will be added soon. The project uses standard C++17 and CMake/Premake build systems).*
+
+---
+<div align="center">
+  <i>Developed with ❤️ and C++ by a Competitive Programmer diving into Graphics.</i>
+</div>
