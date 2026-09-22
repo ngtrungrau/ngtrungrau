@@ -13,8 +13,10 @@
 
 <br>
 
-<!-- CHỖ NÀY BẠN TỰ QUAY 1 ĐOẠN VIDEO NGẮN HOẶC GIF LÚC CHẠY CODE RỒI THẢ VÀO ĐÂY NHÉ -->
-<img src="https://cdn.dribbble.com/users/35381/screenshots/3739777/media/bcbd8bb0b78cb0973a8fdecf060b9c33.gif" alt="Engine Demo Placeholder" width="800" style="border-radius: 10px;"/>
+<!-- Demo GIF (Phong cách Sigma/Dark-mode Low-level Rendering) -->
+<a href="#">
+  <img src="https://i.pinimg.com/originals/c7/ab/35/c7ab35cb8dc2b2d650b2986427d110cf.gif" alt="Engine Core Visualization" width="800" style="border-radius: 10px; border: 1px solid #333; box-shadow: 0 0 20px rgba(0, 255, 153, 0.2);"/>
+</a>
 
 </div>
 
